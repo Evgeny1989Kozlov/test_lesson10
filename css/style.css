@@ -1,0 +1,387 @@
+/* ! Подключение шрифтов */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"),
+      url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Helvetica Neue";
+   src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "HelveticaNeueCyr";
+   src: url("HelveticaNeueCyr-Bold.woff2") format("woff2"), url("HelveticaNeueCyr-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+body {
+   line-height: 1;
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   height: 100%;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.cont {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 10px;
+}
+
+/* *общие классы */
+
+/* .wrapper > div:not(:last-child) {
+   margin-bottom: 50px;
+} */
+
+h1 {
+   font-size: 72px;
+   color: rgba(14, 89, 151, 0.733);
+   text-shadow: 3px -5px 10px rgb(154, 43, 182);
+   margin-bottom: 20px;
+}
+
+h2 {
+   display: inline-block;
+   padding: 5px;
+   font-size: 50px;
+   color: rgba(36, 66, 60, 0.623);
+   /* max-width: 240px; */
+   box-shadow: 6px 9px 4px rgba(52, 153, 221, 0.651);
+   margin-bottom: 25px;
+}
+.spspi h2 {
+   box-shadow: 6px 9px 4px rgb(148, 221, 52);
+   padding: 10px 10px 20px;
+   background: rgba(136, 102, 68, 0.377);
+}
+h2.nadhealth {
+   color: rgb(29, 53, 51);
+   text-transform: capitalize;
+   background: linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.65) 2%,
+      rgba(0, 0, 0, 0.65) 5%,
+      rgba(0, 0, 0, 0) 58%,
+      rgba(0, 0, 0, 0) 100%
+   );
+   display: inline-block;
+   box-shadow: none;
+}
+h2.nadhealth span {
+   background: none;
+}
+
+h2 span {
+   display: inline-block;
+   color: indianred;
+   background: radial-gradient(
+      ellipse at center,
+      rgba(245, 246, 246, 1) 0%,
+      rgba(219, 220, 226, 1) 21%,
+      rgba(184, 186, 198, 1) 49%,
+      rgba(221, 223, 227, 1) 80%,
+      rgba(245, 246, 246, 1) 100%
+   );
+   border-radius: 20px;
+}
+
+/*!  -------------------------Задачи от Сансея!---------------------------- */
+
+/* !---------------------------------------------------------------- */
+/* *why-use-our-program */
+
+.why-use-our-program {
+   font-size: 0px;
+   padding: 92px 117px 92px 0px;
+   background: url("../img/start-using/bg.jpg") 70% 0px / cover no-repeat;
+   text-align: right;
+}
+.main__why-use-our-program {
+   max-width: 1100px;
+   margin: 0 auto;
+   margin-bottom: 145px;
+}
+.why-use-our-program__container {
+   max-width: 366px;
+   display: inline-block;
+}
+.block-text-and-button {
+   text-align: left;
+}
+.block-text-and-button__onlytext {
+   margin-bottom: 30px;
+}
+
+.text-block__title {
+   font-weight: bold;
+   font-size: 42px;
+   line-height: 147%;
+
+   letter-spacing: 0.8px;
+   margin-bottom: 15px;
+   color: #ffffff;
+}
+.text-block__text {
+   font-size: 16px;
+   line-height: 168%;
+
+   letter-spacing: 1.15px;
+
+   color: #ffffff;
+}
+
+.button-block__first-link {
+   display: inline-block;
+   width: 50%;
+}
+.link-first {
+}
+.link {
+   display: inline-block;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+   padding: 17px 40px;
+   background: #F78434;
+   border-radius: 29px;
+}
+.button-block__second-link {
+   display: inline-block;
+   width: 50%;
+}
+.link-second {
+}
+.link_backg-color-icon {
+   color: #323232;
+   background: #fff url("../img/start-using/Icon.svg") 23px center no-repeat;
+}
+
+/* !.......................................................... */
+/* *why-do-we-serve */
+
+.main__why-do-we-serve {
+   max-width: 1100px;
+   margin: 0 auto;
+   margin-bottom: 145px;
+}
+
+.why-do-we-serve__onlytext * {
+   color: #000;
+}
+
+.why-do-we-serve__onlytext {
+   margin-bottom: 45px;
+}
+
+.why-do-we-serve {
+   background: #9797973d;
+   padding: 80px 10px;
+   font-size: 0;
+}
+
+.why-do-we-serve__onlytext {
+   text-align: center;
+}
+.row-bayers-and-seller__col-bayers:hover *,
+.row-bayers-and-seller__col-bayers:hover,
+.row-bayers-and-seller__col-seller:hover *,
+.row-bayers-and-seller__col-seller:hover {
+   color: #fff;
+   background: orange;
+}
+
+.row-bayers-and-seller__col-bayers:hover .link_color-backgr-padding-border,
+.row-bayers-and-seller__col-seller:hover .link_color-backgr-padding-border {
+   color: #F78434;
+   background: #fff;
+   padding: 17px 40px;
+
+   border-radius: 29px;
+}
+
+.row-bayers-and-seller__col-bayers {
+   margin-right: 30px;
+}
+
+main .row-bayers-and-seller__col-bayers,
+.row-bayers-and-seller__col-seller {
+   display: inline-block;
+   width: 48.5%;
+   background: #fff;
+   text-align: center;
+   padding: 88px 40px;
+   color: #000;
+   border-radius: 10px;
+}
+
+.row-bayers-and-seller__col-bayers *,
+.row-bayers-and-seller__col-seller * {
+   color: #000;
+}
+.image-bayers {
+}
+.block-text-and-button__bayers-image {
+   margin-bottom: 15px;
+}
+
+.block-text-and-button__onlytext_marginbot {
+   margin-bottom: 25px;
+}
+.text-block__title_margin {
+   margin-bottom: 1px;
+}
+
+.link_color-backgr-padding-border {
+   color: #F78434;
+   background: #fff;
+   padding: 17px 40px;
+
+   border-radius: 29px;
+}
+
+/* !.......................................................... */
+/* *why-choose-us */
+
+.why-choose-us__onlytext * {
+}
+.why-choose-us {
+   font-size: 0px;
+   padding: 80px 0px;
+}
+.main__why-choose-us {
+   max-width: 1100px;
+   margin: 0 auto;
+   margin-bottom: 145px;
+}
+
+.main__why-choose-us * {
+   color: #000;
+}
+.why-choose-us__onlytext {
+   text-align: center;
+   margin-bottom: 58px;
+}
+
+.text-block__title {
+}
+/* .why-choose-us__row:not(:last-child) {
+   margin-right: 30px;
+} */
+
+.row-why-choose-us__col-four {
+   display: inline-block;
+   width: 25%;
+   padding: 0px 10px 5px;
+   text-align: center;
+   vertical-align: top;
+}
+
+.block-text-and-button__image {
+   margin-bottom: 15px;
+}
+
+/* !.......................................................... */
+/* *.experience-from*/
+
+.experience-from {
+   font-style: 0;
+}
+.main__experience-from {
+   max-width: 1100px;
+   margin: 0 auto;
+   margin-bottom: 145px;
+   background: url("../img/exper/girl.png") 90% 0% / 478px 547px no-repeat;
+   padding: 211px 0px 55px 0px;
+}
+.block-text-and-button {
+}
+.experience-from__container {
+   max-width: 360px;
+   display: inline-block;
+}
+.block-text-and-button__onlytext {
+}
+.text-block {
+}
+
+.text-block__title_display {
+   display: inline;
+}
+.text-block__title {
+}
+.text-block__text {
+}
+.block-text-and-button__onlybuttons {
+}
+.button-block {
+}
+.button-block__first-link {
+}
+.link-first {
+}
+.link {
+}
+.link-backgr-color {
+   color: #000;
+   background: #fff;
+}
+
+.test-backgr {
+   background: url("../img/exper/Bg.jpg") 35% 20% / cover no-repeat;
+}
